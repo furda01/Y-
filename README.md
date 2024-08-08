@@ -57,9 +57,7 @@ def je_prvocislo(n: int) -> bool:
     return True
 
 
-###nejvetsi spolecny delitel###
-
-def nsd_moderni_euklid(u: int, v: int) -> int:          ##nejrychlesjsi
+def nsd_moderni_euklid(u: int, v: int) -> int:
     """Funkce spočítá největšího společného jmenovatele čísel u a v."""
 
     while v != 0:
@@ -69,7 +67,7 @@ def nsd_moderni_euklid(u: int, v: int) -> int:          ##nejrychlesjsi
     return u
 
 
-def nsd_dvojkovy(u: int, v: int) -> int:                ##nejpomalejsi - asi dvakrat pomalejsi nez rozsireny_euklid
+def nsd_dvojkovy(u: int, v: int) -> int:
     """Funkce spočítá největšího společného jmenovatele čísel u a v."""
 
     #vnitrni funkce pro vypocet 2^k potrebny k vraceni#
@@ -108,7 +106,7 @@ def nsd_dvojkovy(u: int, v: int) -> int:                ##nejpomalejsi - asi dva
     return u*(mocneni(2,k))
 
 
-def nsd_rozsireny_euklid(u: int, v: int) -> int:        ##prostredne rychly - asi trikrat pomalejsi nez moderni_euklid
+def nsd_rozsireny_euklid(u: int, v: int) -> int:
     """Funkce spočítá největšího společného jmenovatele čísel u a v."""
 
     u1, u2, u3 = 1, 0, u
@@ -122,16 +120,14 @@ def nsd_rozsireny_euklid(u: int, v: int) -> int:        ##prostredne rychly - as
     return u3
 
 
-###nejmensi spolecny nasobek###
-
-def nsn_euklid(u: int, v: int) -> int:              ##nejrychlejsi
+def nsn_euklid(u: int, v: int) -> int:
     """Funkce spočítá nejmenší společný násobek čísel u a v."""
 
     u //= nsd_moderni_euklid(u, v)
     return u*v
 
 
-def nsn_rozklad(u: int, v: int) -> int:             ##pomale - asi padesatkrat pomalejsi nez nsn_euklid
+def nsn_rozklad(u: int, v: int) -> int:
     """Funkce spočítá nejmenší společný násobek čísel u a v."""
 
     #vnitrni funkce kvuli rozkladu#
@@ -196,9 +192,7 @@ def nsn_rozklad(u: int, v: int) -> int:             ##pomale - asi padesatkrat p
     return x
 
 
-###prvociselny rozklad###
-
-def fermat(n: int) -> list[int]:                    ##rozlozi vzdy
+def fermat(n: int) -> list[int]:
     """Funkce rozloží dané číslo na prvočinitele."""
     
     #vnitrni funkce kvuli rekurzi#
@@ -238,7 +232,7 @@ def fermat(n: int) -> list[int]:                    ##rozlozi vzdy
     return sorted(seznam)
 
 
-def euler(n: int) -> list[int]:                     ##ne vzdy rozlozi
+def euler(n: int) -> list[int]:
     """Funkce rozloží dané číslo na prvočinitele. Ne vždy se jí to podaří, je k tomu pořeba mít dva různé rozklady na součet čtverců."""
 
     #vnitrni funkce kvuli rekurzi#
