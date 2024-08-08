@@ -5,7 +5,7 @@ from collections import defaultdict     ##pro nsn s prvociselnym rozkladem##
 
 ###test prvociselnosti###
 
-def je_prvocislo(n: int) -> bool:       ##vse v okamziku##
+def je_prvocislo(n: int) -> bool:
     """Funkce určí, jestli je dané číslo prvočíslem."""
 
     #vnitrni funkce potrebna pro rozklad cisla#
