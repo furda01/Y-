@@ -1,6 +1,6 @@
-from random import randint              ##pro test prvociselnosti##
-from math import sqrt                   ##pro fermata i eulera##
-from collections import defaultdict     ##pro nsn s prvociselnym rozkladem##
+from random import randint
+from math import sqrt
+from collections import defaultdict
 
 
 def je_prvocislo(n: int) -> bool:
