@@ -4,6 +4,7 @@ from collections import defaultdict     ##pro nsn s prvociselnym rozkladem
 
 
 ###test prvociselnosti###
+
 def je_prvocislo(n: int) -> bool:       ##vse v okamziku
     """Funkce určí, jestli je dané číslo prvočíslem."""
 
@@ -59,6 +60,7 @@ def je_prvocislo(n: int) -> bool:       ##vse v okamziku
 
 
 ###nejvetsi spolecny delitel###
+
 def nsd_moderni_euklid(u: int, v: int) -> int:          ##nejrychlesjsi
     """Funkce spočítá největšího společného jmenovatele čísel u a v."""
 
@@ -123,6 +125,7 @@ def nsd_rozsireny_euklid(u: int, v: int) -> int:        ##prostredne rychly - as
 
 
 ###nejmensi spolecny nasobek###
+
 def nsn_euklid(u: int, v: int) -> int:              ##nejrychlejsi
     """Funkce spočítá nejmenší společný násobek čísel u a v."""
 
@@ -196,6 +199,7 @@ def nsn_rozklad(u: int, v: int) -> int:             ##pomale - asi padesatkrat p
 
 
 ###prvociselny rozklad###
+
 def fermat(n: int) -> list[int]:                    ##rozlozi vzdy
     """Funkce rozloží dané číslo na prvočinitele."""
     
