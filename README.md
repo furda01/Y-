@@ -1,11 +1,11 @@
-from random import randint              ##pro test prvociselnosti
-from math import sqrt                   ##pro fermata i eulera
-from collections import defaultdict     ##pro nsn s prvociselnym rozkladem
+from random import randint              ##pro test prvociselnosti##
+from math import sqrt                   ##pro fermata i eulera##
+from collections import defaultdict     ##pro nsn s prvociselnym rozkladem##
 
 
 ###test prvociselnosti###
 
-def je_prvocislo(n: int) -> bool:       ##vse v okamziku
+def je_prvocislo(n: int) -> bool:       ##vse v okamziku##
     """Funkce určí, jestli je dané číslo prvočíslem."""
 
     #vnitrni funkce potrebna pro rozklad cisla#
