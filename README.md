@@ -3,10 +3,9 @@ from math import sqrt                   ##pro fermata i eulera##
 from collections import defaultdict     ##pro nsn s prvociselnym rozkladem##
 
 
-###test prvociselnosti###
-
 def je_prvocislo(n: int) -> bool:
     """Funkce určí, jestli je dané číslo prvočíslem."""
+    
     #vnitrni funkce potrebna pro rozklad cisla#
     def rozklad(n: int) -> tuple[int,int]:
         """Funkce rozloží dané číslo do tvaru (2^k)*q."""
