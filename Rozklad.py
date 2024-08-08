@@ -122,9 +122,6 @@ def nsd_rozsireny_euklid(u: int, v: int) -> int:        ##prostredne rychly - as
     return u3
 
 
-        ###rozklad na prvocinitele###
-
-
 ###nejmensi spolecny nasobek###
 def nsn_euklid(u: int, v: int) -> int:              ##nejrychlejsi
     """Funkce spočítá nejmenší společný násobek čísel u a v."""
