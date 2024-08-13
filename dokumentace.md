@@ -12,3 +12,8 @@ Další z funkcí je nsn_euklid, která spočítá nejmenší společný násobe
 
 Druhou funkcí počítající nejmenší společný násobek je nsn_rozklad. Jejím vstupem jsou také dvě intové proměnné a výstupem pouze jedna. Algoritmus využitý v této funkci je rozložit si obě čísla na prvočinitele a následně roznásobit největší mocniny jejich prvočinitelů. V porovnání s nsn_euklid je tato funkce asi padesátkrát pomalejší.
 
+První z funkcí počítající prvočíselný rozklad je fermat. Tato funkce z jedné intové proměnné větší nebo rovna 2 vytvoří seřazený seznam intových proměných, které jsou její prvočinitelé. Funkce využívá rekurzivně Fermatův algoritmus, dokud se nedostane na prvočísla.
+
+Druhou z funkcí na prvočíselný rozklad je euler. Tato funkce z jedné intové proměnné větší nebo rovna 2 vytvoří seřazený seznam intových proměných, které jsou její prvočinitelé. I tato používá rekurzivně Eulerův algoritmus, dokud nerozloží dané číslo na prvočinitele. Tato funkce je trochu rychlejší než fermat, její nevýhodou je avšak to, že nedokáže rozložit všechny jí předložená čísla. V tomto případě se objeví ValueError. Ne každé číslo má totiž dva různé rozklady na součet dvou čtverců, které jsou v tomto algoritmu potřebné.
+
+Proto je zde třetí funkce rozklad, kerá nejprve vyzkouší funkci euler a pokud zkolabuje, tak se spustí pomalejší fermat.
