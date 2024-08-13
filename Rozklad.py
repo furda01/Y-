@@ -86,7 +86,11 @@ def nsd_dvojkovy(u: int, v: int) -> int:                ##nejpomalejsi - asi dva
         return b
     #konec vnitrni funkce#
 
-
+    if u<0:
+        u *= -1
+    if v<0:
+        v *= -1
+    
     k = 0
     while u%2 == 0 and v%2 == 0:
         k += 1
