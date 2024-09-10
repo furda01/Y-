@@ -290,6 +290,6 @@ def rozklad(n: int) -> list[int]:
     """Funkce rozloží dané číslo na prvočinitele."""
 
     try:
-        euler(n)
+        return euler(n)
     except ValueError:
-        fermat(n)
+        return fermat(n)
