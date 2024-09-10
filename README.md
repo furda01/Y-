@@ -38,5 +38,26 @@ Kód používá pouze standardní Pythonské knihovny.
 ```python
 import Rozklad
 print(Rozklad.je_provcislo(129))
+print(Rozklad.nsd_moderni_euklid(156, 234))
+print(Rozklad.nsd_dvojkovy(156, 234))
+print(Rozklad.nsd_rozsireny_euklid(156, 234))
+print(Rozklad.nsn_euklid(14, 24))
+print(Rozklad.nsn_rozklad(14, 24))
+print(Rozklad.euler(1000009))
+print(Rozklad.fermat(1000009))
+print(Rozklad.rozklad(27516))
+```
 
+## Výsledky
+
+```
+False
+78
+78
+78
+168
+168
+[293, 3413]
+[293, 3413]
+[2, 2, 3, 2293]
 ```
